@@ -1,5 +1,5 @@
 #include <stdio.h>
-int i, j, k, n = 7;
+int i, j, k, n = 17;
 void flag(){
     for (i = 1; i <= (n / 2)+1; i++)
     {
@@ -75,26 +75,15 @@ void tempdoor(){
         }
 }
 
-// main()
-// {
-//     flag();
-//     stick();
-//     temptop();
-//     tempmid();
-//     templow();
-// }
-
 void pthf(){
    for(i=1; i<=n; i++)
     {
         for(int j = 1; j<=n;j++)printf(" ");
-        /* Print trailing spaces */
         for(j=1; j<=n - i; j++)
         {
             printf(" ");
         }
 
-        /* Print stars after spaces */
         for(j=1; j<=2*n-1; j++)
         {
             if(j==1 || j==2*n-2)
@@ -102,7 +91,6 @@ void pthf(){
             else printf(" ");
         }
 
-        /* Move to the next line */
         printf("\n");
     }
 }
