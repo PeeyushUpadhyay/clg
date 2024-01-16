@@ -1,0 +1,3 @@
+        pubD();
+        priD();
+        proD();

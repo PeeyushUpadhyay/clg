@@ -4,7 +4,9 @@ main(){
     int n,f; 
     scanf("%d",&n);
     f = fib(n);
-    printf("%d \n", f);
+    for(int i=0; i<n; i++){
+        printf("%d ", fib(i));
+    }
 }
 
 fib(int n){
